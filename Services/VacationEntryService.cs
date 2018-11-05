@@ -1,0 +1,51 @@
+using System.Collections.Generic;
+using EmployeeVacationCalender.Models;
+using EmployeeVacationCalender.Services.Interfaces;
+
+namespace EmployeeVacationCalender.Services 
+{
+    public class VacationEntryService : IVacationEntryService
+    {
+        public VacationEntryViewModel GetVacationEntry(int entryId)
+        {
+            var entry = new VacationEntryViewModel();
+
+            //get the entry by name
+
+            return entry;
+        }
+
+        public VacationEntryViewModel UpdateVacationEntry(VacationEntryViewModel vacationEntryUpdate)
+        {
+            //find the corresponding entry
+
+            var vacationEntry = GetVacationEntry(vacationEntryUpdate.VacationEntryId);
+            //update values
+
+            vacationEntry.FirstName = vacationEntryUpdate.FirstName;
+            vacationEntry.LastName = vacationEntryUpdate.LastName;
+            vacationEntry.StartDate = vacationEntryUpdate.StartDate;
+            vacationEntry.EndDate = vacationEntryUpdate.EndDate;
+            vacationEntry.VacationType = vacationEntryUpdate.VacationType;
+
+            //save
+
+            return vacationEntry;
+        }
+
+        public VacationEntryViewModel AddVacationEntry(VacationEntryViewModel vacationEntry)
+        {
+            //add vacation entry
+
+            return vacationEntry;
+        }
+
+        public void DeleteVacationEntry(int vacationEntryId)
+        {
+            //find vacation entry by id
+            //delete entry
+        }
+
+
+    }
+}

@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace EmployeeVacationCalender.Models
+namespace EmployeeVacationCalender.Models.Enums
 {
     public enum VacationType
     {

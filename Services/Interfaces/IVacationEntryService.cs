@@ -5,11 +5,11 @@ namespace EmployeeVacationCalender.Services.Interfaces
 {
     public interface IVacationEntryService
     {
-        VacationEntryViewModel GetVacationEntry(int entryId);
+        VacationEntry GetVacationEntry(int entryId);
 
-        VacationEntryViewModel UpdateVacationEntry(VacationEntryViewModel vacationEntry);
+        VacationEntry UpdateVacationEntry(VacationEntry vacationEntry);
 
-        VacationEntryViewModel AddVacationEntry(VacationEntryViewModel vacationEntry);
+        VacationEntry AddVacationEntry(VacationEntry vacationEntry);
 
         void DeleteVacationEntry(int vacationEntryId);
     }

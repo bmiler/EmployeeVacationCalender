@@ -5,10 +5,10 @@ namespace EmployeeVacationCalender.Services.Interfaces
 {
     public interface IUserService
     {
-        UserViewModel GetUser(string fullName);
+        User GetUser(string fullName);
 
-        List<UserViewModel> GetAllUsers();
+        List<User> GetAllUsers();
 
-        UserViewModel AddOrUpdateUser(UserViewModel user);
+        User AddOrUpdateUser(User user);
     }
 }

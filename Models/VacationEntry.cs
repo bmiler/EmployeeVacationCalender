@@ -3,7 +3,7 @@ using EmployeeVacationCalender.Models.Enums;
 
 namespace EmployeeVacationCalender.Models
 {
-    public class VacationEntryViewModel
+    public class VacationEntry
     {
         public int VacationEntryId { get; set; }
         public string FirstName { get; set; }

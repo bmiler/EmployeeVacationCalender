@@ -6,16 +6,16 @@ namespace EmployeeVacationCalender.Services
 {
     public class VacationEntryService : IVacationEntryService
     {
-        public VacationEntryViewModel GetVacationEntry(int entryId)
+        public VacationEntry GetVacationEntry(int entryId)
         {
-            var entry = new VacationEntryViewModel();
+            var entry = new VacationEntry();
 
             //get the entry by name
 
             return entry;
         }
 
-        public VacationEntryViewModel UpdateVacationEntry(VacationEntryViewModel vacationEntryUpdate)
+        public VacationEntry UpdateVacationEntry(VacationEntry vacationEntryUpdate)
         {
             //find the corresponding entry
 
@@ -33,7 +33,7 @@ namespace EmployeeVacationCalender.Services
             return vacationEntry;
         }
 
-        public VacationEntryViewModel AddVacationEntry(VacationEntryViewModel vacationEntry)
+        public VacationEntry AddVacationEntry(VacationEntry vacationEntry)
         {
             //add vacation entry
 

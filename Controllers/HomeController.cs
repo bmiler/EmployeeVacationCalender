@@ -33,11 +33,11 @@ namespace EmployeeVacationCalender.Controllers
         [HttpGet]
         public IActionResult Add()
         {
-            return View(new VacationEntryViewModel());
+            return View(new VacationEntry());
         }
 
         [HttpPost]
-        public IActionResult Add(VacationEntryViewModel vacationEntry)
+        public IActionResult Add(VacationEntry vacationEntry)
         {
             if(ModelState.IsValid)
             {
@@ -47,12 +47,12 @@ namespace EmployeeVacationCalender.Controllers
 
                 if(user == null)
                 {
-                    user = new UserViewModel
+                    user = new User
                     {
                         FirstName = vacationEntry.FirstName,
                         LastName = vacationEntry.LastName,
                         Role = UserRole.Employee,
-                        VacationDays = new List<VacationEntryViewModel>()
+                        VacationDays = new List<VacationEntry>()
                     };
                 }
 
@@ -81,7 +81,7 @@ namespace EmployeeVacationCalender.Controllers
         }
 
         [HttpPut]
-        public IActionResult Edit(VacationEntryViewModel vacationEntry)
+        public IActionResult Edit(VacationEntry vacationEntry)
         {
             if(ModelState.IsValid)
             {
